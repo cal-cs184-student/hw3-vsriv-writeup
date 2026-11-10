@@ -87,7 +87,16 @@
 		<a href="https://github.com/cal-cs184-student/hw3-vsriv">GitHub Repo</a>
 		
 		<h2>Overview</h2>
-		Give a high-level overview of what you implemented in this homework. Think about what you've built as a whole. Share your thoughts on what interesting things you've learned from completing the homework.
+		In this homework I built a path tracer from the ground up. It starts with the basics of casting a ray, then adds the physics and statistics 
+		needed to produce realistic, global-illumination images. From the ray generation itself, to object intersection, to optimizations for lighting
+		and computation, there are many steps taken when rendering a 3D scene into some image. 
+
+		<br><br>
+
+		Algorithsm like BVH lead to massive improvements in render time, and optimizations like light sampling help make the rendering algorithm more focused
+		so that the quality of the render is better within a given time limit. Similarly, Russian roulette and adaptive sampling help limit the amount of
+		computation actually exercised during the process without comprimising on the final image. These shortcuts and optimizations are simple in theory,
+		but take a lot of effort to properly implement, and yet come with massive rewards in the form of speed ups in render times.
 
 		<h2>Part 1: Ray Generation and Scene Intersection</h2>
 
